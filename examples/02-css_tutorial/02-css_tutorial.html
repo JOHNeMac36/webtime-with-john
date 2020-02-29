@@ -1,0 +1,156 @@
+<!-- HTML styled with external css file -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is the Title</title>
+        <!-- links to the css fil  -->
+        <link href="css/02-css_tutorial.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- You can edit the style of an element by using the "style" attribute -->
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <p class=green_text>This is a paragraph.</p>
+
+        This is text outside of tags. This is bad practice because the
+        purpose of HTML is to add structure to your web page.
+
+        <ol>
+            This is an ordered list:
+            <li>This is the first list item</li>
+            <li>This is the second list item</li>
+            <li>This is the third list item</li>
+        </ol>
+
+        <ul>
+            This is an unordered list:
+            <li>This is the first list item</li>
+            <li>This is the second list item</li>
+            <li>This is the third list item</li>
+        </ul>
+
+        <p class="green_text centered_text">Tags can be used inside of other tags</p>
+
+        <ol>
+            <h1>This is an ordered list:</h1>
+            <li><h2>This is the first list item</h2></li>
+            <li><h2>This is the second list item</h2></li>
+            <li><h2>This is the third list item</h2></li>
+        </ol>
+
+        <p>
+            <a href="https://www.w3schools.com/html">links</a> are designated using
+            "a" tags and the "href" attribute points to where the link
+            goes to.
+        </p>
+        <p id="jump_back_paragraph">
+            <a href="#jump_to_heading">internal links</a> can be used to
+            link to certain elements based on their id.
+        </p>
+
+        <section id=section_section>
+            <h2>Sections</h2>
+            <h3>Sections are a great way of grouping things together</h3>
+            <p>
+                Sections group related elements together.
+            </p>
+        </section>
+
+        <section id=table_section>
+            <h2>Tables</h2>
+            <h3>Tables are a great way of organizing data</h3>
+            <p>
+                Tables use the "table" tag and are split into rows.
+                Each row uses a "tr" tag. Columns in tables are either
+                table headings "th" or table data "td."
+            </p>
+            <table>
+                  <tr>
+                      <th>Table Heading 1</th>
+                      <th>Table Heading 2</th>
+                      <th>Table Heading 3</th>
+                  </tr>
+                  <tr>
+                      <td>Arbitrary Data</td>
+                      <td>Arbitrary Data</td>
+                      <td>Arbitrary Data</td>
+                  </tr>
+                  <tr>
+                     <td>1</td>
+                     <td>2</td>
+                     <td>3</td>
+                 </tr>
+                 <tr>
+                     <td>$3.00</td>
+                     <td>$4.00</td>
+                     <td>$5.00</td>
+                 </tr>
+            </table>
+        </section>
+
+
+        <section id=image_section>
+            <h2>Images</h2>
+            <h3>Images are cool</h3>
+            <p>Images use the tag "img" and the "src" attribute points to where the image can be found. Image sources can be local images (left) or images found online (right)</p>
+            <img class="circle_image blue_image" src="img/tux.png">
+            <img class="blue_image"src="https://cdn2.iconfinder.com/data/icons/oxygen/128x128/apps/tux.png">
+        </section>
+
+        <div id="div_div">
+          <h2>Div's</h2>
+          <p>
+            Div's (or divisions), are blocks that are used to group content together, however, they don't convey any real "meaning" on how the content is related, they are
+            good for when you start styling your webpage.
+          </p>
+        </div>
+
+
+        <section id="span_section">
+          <h2>Span's</h2>
+          <p>
+            Span's are use to group elements in-line.
+          </p>
+          <p>This paragraph <span>and this span are grouped together in-line</span></p>
+        </section>
+
+        <section id="input_section">
+          <h2>Inputs</h2>
+          <p>
+            There are many types of inputs that let you enter information
+          </p>
+          <label>Text input: </label><input type="text">
+          <br>
+          <label>Text Area: </label><textarea>Long text...</textarea>
+          <br>
+          <label>Number input: </label><input type="number">
+          <br>
+          <label>Date input: </label><input type="date">
+          <br>
+          <label>Checkboxes: </label> <input type="checkbox"> <input type="checkbox">
+          <br>
+          <label>Radio buttons: </label>
+          <input type="radio" name="similarly_named_radio_buttons">
+          <input type="radio" name="similarly_named_radio_buttons">
+          <input type="radio" name="similarly_named_radio_buttons">
+          
+        </section>
+
+        <h1 id="jump_to_heading">Jump to Me!</h1>
+        <p>
+          <a href="#jump_back_paragraph">Jump Back!</a>
+          <br>
+          <small>
+            Note: look at your page's URL, what happens when you click the "jump to me" link? What does this tell you about how jumping around your page to different
+            elements works
+          </small>
+
+        <h1 id="jump_to_heading" class="green_text">Jump to Me!</h1>
+        <p>
+            <a id="jump_back_link" href="#jump_back_paragraph">Jump Back!</a>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+image: dxjoke/tectonic-docker:latest
+
+build:
+  script:
+    - cd presentation
+    - mkdir output
+    - tectonic --outdir output presentation.tex

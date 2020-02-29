@@ -1,0 +1,65 @@
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: url("../img/background.jpg") no-repeat center center fixed;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+h1 {
+  color: red;
+}
+
+p {
+  font-family: serif;
+  font-style: oblique;
+}
+
+section {
+  min-width: 400px;
+  padding: 10px 0;
+}
+
+table {
+  background-color: white;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  text-align: center;
+  border: 1px solid black;
+}
+
+ol, ul {
+  background-color: green;
+}
+.circle_image {
+  border-radius: 50%;
+}
+
+.blue_image {
+  background-color: blue;
+}
+
+#jump_back_link:link,
+#jump_back_link:visited {
+  background-color: green;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#jump_back_link:active,
+#jump_back_link:hover {
+  color: red;
+}
+
+#table_section {
+  background-color: gray;
+}
